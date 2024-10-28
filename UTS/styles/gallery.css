@@ -1,0 +1,86 @@
+.container-content {
+    padding: 48px;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.back-content {
+    height: calc(100vh - 96px);
+    width: 100%;
+}
+
+.back-content span {
+    font-size: 16em;
+    line-height: 0.92em;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    margin: 0;
+    color: #7C8086;
+}
+
+.content {
+    padding: 192px 0 0 0;
+}
+
+.content .col-4 {
+    border-color: #252C35 !important;
+    margin: 96px 24px;
+}
+
+.content img {
+    max-width: 660px;
+    width: 100%;
+}
+
+.content {
+    overflow-x: hidden !important;
+}
+
+/* ================ >=1200px && <=1919 pxRESPONSIVE ================*/
+/* @media screen and (min-width: 1200px) and (max-width: 1919px) {
+} */
+
+/* ================ >=979px && <=1199px pxRESPONSIVE ================*/
+@media screen and (min-width: 979px) and (max-width: 1199px) {
+    .content .col-4 {
+        width: calc(100% - 48px) !important;
+    }
+}
+
+/* ================ >=767px && <=978px RESPONSIVE ================*/
+@media screen and (min-width: 767px) and (max-width: 978px) {
+    .back-content span {
+        font-size: 9em;
+    }
+
+    .content .col-4 {
+        width: calc(100% - 48px) !important;
+    }
+
+    .container-content {
+        padding: 24px;
+    }
+}
+
+/* ================ >=0px && <=766px RESPONSIVE ================*/
+@media screen and (min-width: 0px) and (max-width: 766px) {
+    .back-content span {
+        font-size: 6.125em;
+    }
+
+    .content .col-4 {
+        width: calc(100% - 48px) !important;
+    }
+
+    .container-content {
+        padding: 24px;
+    }
+
+    .col-12 .col-4 {
+        width: 100% !important;
+        text-align: center !important;
+    }
+}
