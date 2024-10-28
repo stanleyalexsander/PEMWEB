@@ -1,0 +1,122 @@
+/* COVER */
+.cover{
+    width: 100%;
+    height: 100vh;
+    padding: 48px;
+}
+/* END COVER */
+
+/* NAVBAR */
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-brand::after {
+    background-color: #ffffff;
+  }
+
+.navbar-brand {
+    color: #ffffff !important;
+}
+
+.navbar-toggler {
+    filter: invert(1);
+}
+/* END NAVBAR */
+
+/* WORKS */
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.col-dmslib, .col-plkm, .col-nusan {
+    position: relative;
+    overflow: hidden;
+}
+
+.col-dmslib::before, .col-plkm::before, .col-nusan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+}
+
+.col-dmslib::before {
+    background-image: url('../img/bg-dmslib.png');
+}
+
+.col-plkm::before {
+    background-image: url('../img/bg-plkm.png');
+}
+
+.col-nusan::before {
+    background-image: url('../img/bg-nusan.png');
+}
+
+.col-dmslib:hover::before,
+.col-plkm:hover::before,
+.col-nusan:hover::before {
+    opacity: 0.2;
+}
+
+.col-dmslib h3, .col-plkm h3, .col-nusan h3 {
+    font-size: 64px;
+    transition: 0.5s;
+}
+
+.col-dmslib:hover h3,
+.col-plkm:hover h3,
+.col-nusan:hover h3 {
+    font-size: 128px;
+    transition: 0.5s;
+}
+
+.col-dmslib > *, .col-plkm > *, .col-nusan > * {
+    position: relative;
+    z-index: 1;
+}
+/* END WORKS */
+
+/* FOOTER */
+.container-content {
+    padding: 48px 48px;
+}
+
+.row-footer {
+    margin: 0;
+}
+/* ENDFOOTER */
+
+/* ================ >=0px && <=766px RESPONSIVE ================*/
+@media screen and (min-width: 0px) and (max-width: 766px) {
+.container-content, .cover {
+    padding: 24px;
+    margin: 0 !important;
+}
+
+.col-dmslib, .col-plkm {
+    width: 100% !important;
+}
+
+.col-dmslib h3, .col-plkm h3, .col-nusan h3 {
+    font-size: 48px;
+    transition: 0.5s;
+}
+
+.col-dmslib:hover h3,
+.col-plkm:hover h3,
+.col-nusan:hover h3 {
+    font-size: 64px;
+    transition: 0.5s;
+}
+}

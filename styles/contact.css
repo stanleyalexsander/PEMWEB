@@ -1,0 +1,147 @@
+.container-content {
+    padding: 48px;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-brand::after {
+    background-color: #ffffff;
+  }
+
+.navbar-brand {
+    color: #ffffff !important;
+}
+
+.navbar-toggler {
+    filter: invert(1);
+}
+/* END NAVBAR */
+
+.cover {
+    padding: 102px 0 96px 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.cover p {
+    font-size: 64px;
+    margin-bottom: 48px;
+    padding: 0;
+}
+
+.cover .row {
+    max-width: 1240px;
+}
+
+input, textarea{
+    font-size: 2.25em !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-bottom: 2px solid #7C8086 !important; 
+    outline: none !important;
+    margin: 0 0 96px 0;
+    letter-spacing: 0.004em;
+
+    width: 100%;
+    border-radius: 0 !important;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #7C8086 !important;
+    opacity: 1;
+}
+
+input:focus, textarea:focus {
+    outline: none !important;
+    border-bottom: 2px solid #ffffff !important;
+    box-shadow: none !important;
+}
+
+button {
+    font-size: 2.25em;
+    color: #7C8086;
+    transition: 0.5s;
+    margin: 24px 0 0 0 !important;
+    letter-spacing: 0.008em;
+}
+
+button:hover {
+    color: #ffffff;
+}
+
+.row-footer {
+    margin: 0;
+}
+
+/* ================ >=1200px && <=1919px RESPONSIVE ================*/
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+    input, textarea, button{
+        font-size: 24px !important;
+    }
+
+    .cover p {
+        font-size: 32px;
+    }   
+}
+
+/* ================ >=979px && <=1199px RESPONSIVE ================*/
+@media screen and (min-width: 979px) and (max-width: 1199px) {
+    input, textarea, button{
+        font-size: 24px !important;
+    }
+    
+    input {
+        margin-bottom: 96px !important;
+    }
+
+    .cover p {
+        font-size: 32px;
+    }   
+}
+
+/* ================ >=767px && <=978px RESPONSIVE ================*/
+@media screen and (min-width: 767px) and (max-width: 978px) {
+    input, textarea, button{
+        font-size: 20px !important;
+    }
+
+    .col-5 {
+        width: 100% !important;
+    }
+    
+    input {
+        margin-bottom: 48px !important;
+    }
+
+    .cover p {
+        font-size: 32px;
+    }
+    
+}
+
+/* ================ >=0px && <=766px RESPONSIVE ================*/
+@media screen and (min-width: 0px) and (max-width: 766px) {
+    input, textarea, button{
+        font-size: 16px !important;
+    }
+
+    textarea {
+        height: 100px !important;
+    }
+
+    .col-5 {
+        width: 100% !important;
+    }
+    
+    input {
+        margin-bottom: 48px !important;
+    }
+
+    .cover p {
+        font-size: 24px;
+    }
+    
+}
