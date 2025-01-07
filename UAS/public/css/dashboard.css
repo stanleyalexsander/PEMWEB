@@ -1,0 +1,31 @@
+/* RIGHT CONTENT */
+#wrap-right {
+    padding: 0 0 0 230px;
+    margin: 0;
+}
+
+#data-row {
+    gap: 48px;
+}
+
+.col-lg-6{
+    width: calc(50% - 24px) !important;
+}
+/* END RIGHT CONTENT */
+
+/* ================ >=0px && <=991px RESPONSIVE ================*/
+@media screen and (min-width: 720px) and (max-width: 991px) {
+    .col-lg-6{
+        width: 100% !important;
+    }
+}
+
+/* ================ >=0px && <=576px RESPONSIVE ================*/
+@media screen and (min-width: 0px) and (max-width: 719px) {
+    #wrap-right {
+        padding: 0;
+    }
+    .col-lg-6{
+        width: 100% !important;
+    }
+}
